@@ -1,0 +1,95 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyZomato" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <!--        <item name="android:backgroundTint">#f5f6fb</item>-->
+
+        <item name="android:fontFamily">@font/primary_regular</item>
+        <!--        <item name="android:textColor">@color/black</item>-->
+
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+
+
+        <!--      Chip Style-->
+        <item name="chipStyle">@style/Widget.App.Chip</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+        <!--        Material Card-->
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent
+        </item>
+
+
+        <!--        Top App bar-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+
+        <!--        <item name="toolbarStyle">Widget.App.Toolbar</item>-->
+
+
+    </style>
+
+    <!--Toolbar-->
+
+
+    <!--    Material Card-->
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+        <item name="strokeWidth">@null</item>
+    </style>
+
+    <!--    All rounded image-->
+
+
+    <!--    top rounded image-->
+    <style name="SpecificCornerRounded">
+        <item name="cornerSizeTopRight">360dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">360dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+    </style>
+
+
+    <!--    Chip Style-->
+    <style name="Widget.App.Chip" parent="Widget.Material3.Chip.Input">
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/Tyrolean</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="TextAppearance.App.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/primary_bold</item>
+        <item name="android:fontFamily">@font/primary_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--    Outline Button-->
+    <style name="Widget.Material3.Button.OutlinedButton" parent="Widget.Material3.Button.TextButton">
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1sp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="fullScreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:fontFamily">@font/primary_regular</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+    </style>
+
+    <style name="Theme.MyZomato" parent="Base.Theme.MyZomato" />
+</resources>

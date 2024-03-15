@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/g_black_down"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="5dp"
+            android:text="Upto 20% Off"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/averageRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_round_corner_5"
+        android:backgroundTint="#217b3a"
+        android:drawableEnd="@drawable/ic_star"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/primary_bold"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="4.1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_round_corner_15"
+        android:backgroundTint="@color/black"
+        android:padding="5dp"
+        android:text=" Upto 20% Off "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/primary_extra"
+        android:padding="5dp"
+        android:text="Upto 20% Off"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</FrameLayout>

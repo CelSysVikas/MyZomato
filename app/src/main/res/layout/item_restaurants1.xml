@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="25sp"
+        app:cardElevation="2sp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_bacon_gouda_egg_sandwich"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_period="1000"
+                    app:iss_placeholder="@drawable/groumat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_heart"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_more_vert"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tvRestaurantName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/primary_extra"
+                        android:text="Dish name"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/averageRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_corner_5"
+                        android:backgroundTint="#217b3a"
+                        android:drawableEnd="@drawable/ic_star"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/white"
+                        android:fontFamily="@font/primary_bold"
+                        android:gravity="center"
+                        android:padding="5sp"
+                        android:text="4.1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvRestaurantName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvRestaurantName" />
+
+                    <TextView
+                        android:id="@+id/tvRestaurantFeature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:enabled="false"
+                        android:text="Chinese"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvRestaurantName" />
+
+                    <TextView
+                        android:id="@+id/textView111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text=" • "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvRestaurantFeature"
+                        app:layout_constraintStart_toEndOf="@+id/tvRestaurantFeature"
+                        app:layout_constraintTop_toTopOf="@+id/tvRestaurantFeature" />
+
+                    <TextView
+                        android:id="@+id/feature2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="thai"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView111"
+                        app:layout_constraintStart_toEndOf="@+id/textView111"
+                        app:layout_constraintTop_toTopOf="@+id/textView111" />
+
+                    <TextView
+                        android:id="@+id/text111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text=" • "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/feature2"
+                        app:layout_constraintStart_toEndOf="@+id/feature2"
+                        app:layout_constraintTop_toTopOf="@+id/feature2" />
+
+                    <TextView
+                        android:id="@+id/feature3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="₹238 for one"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/text111"
+                        app:layout_constraintStart_toEndOf="@+id/text111"
+                        app:layout_constraintTop_toTopOf="@+id/text111" />
+
+                    <TextView
+                        android:id="@+id/tvTimeTaken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/_15_minutes"
+                        android:drawablePadding="5dp"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="27 minutes"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvRestaurantFeature" />
+
+                    <TextView
+                        android:id="@+id/text222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text=" • "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvTimeTaken"
+                        app:layout_constraintTop_toTopOf="@+id/tvTimeTaken" />
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="27 minutes"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/text222"
+                        app:layout_constraintTop_toTopOf="@+id/text222" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/line_dashed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableStart="@drawable/ic_discount"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="40% OFF up to 100"
+                    android:textColor="#306edd"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.HomeNav.DiningFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/primaryLite" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center|start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/primary_extra"
+                            android:text="Block B"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="Sector 1, Noida"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:src="@drawable/ic_menu" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/bg_round_corner_15"
+                    android:elevation="2sp"
+                    android:gravity="center"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/search"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:text="Search ''ice cream''"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width=".5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mic"
+                        app:tint="@color/primary" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:elevation="2dp"
+                            android:text="@string/filter"
+                            app:chipIcon="@drawable/ic_filter"
+                            app:chipIconSize="16sp"
+                            app:closeIcon="@drawable/ic_arrow_down" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="2dp"
+                            android:text="Award Winters"
+                            app:chipIconSize="16sp"
+                            app:closeIcon="@null" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="2dp"
+                            android:text="Nearest"
+                            app:chipIconSize="16sp"
+                            app:closeIcon="@null" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="2dp"
+                            android:text="Award Winters"
+                            app:chipIconSize="16sp"
+                            app:closeIcon="@null" />
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:elevation="2sp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/wave" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/primary_extra"
+                                android:text="Gold walk-in offers" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:background="#000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Gold walk-in offers"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:elevation="2sp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/wave" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/primary_extra"
+                                android:text="Pre-book and save" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:background="@color/primaryLite"
+                                android:gravity="center"
+                                android:padding="5dp"
+
+                                android:text="Upto 50% off"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:letterSpacing=".1"
+                    android:padding="15dp"
+                    android:text="IN THE LIMELIGHT"
+                    android:textAlignment="center" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/item_slider_restros" />
+
+                        <include layout="@layout/item_slider_restros" />
+
+                        <include layout="@layout/item_slider_restros" />
+
+                        <include layout="@layout/item_slider_restros" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:letterSpacing=".1"
+                    android:padding="15dp"
+                    android:text="WHAT ARE YOU LOOKING FOR?"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_corner_5"
+                    android:elevation="2sp">
+
+                    <include layout="@layout/item_food_type" />
+
+                    <include layout="@layout/item_food_type" />
+
+                    <include layout="@layout/item_food_type" />
+
+                    <include layout="@layout/item_food_type" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:letterSpacing=".1"
+                    android:padding="15dp"
+                    android:text="AVAILABLE BANK OFFERS"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp">
+
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:letterSpacing=".1"
+                    android:padding="15dp"
+                    android:text="WHAT'S MORE IN STORE?"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2sp"
+                                android:orientation="horizontal"
+                                app:cardCornerRadius="15sp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/g_black_down"
+                                    android:backgroundTint="#c2b7fc"
+                                    android:padding="20dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_nearby" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Nearby"
+                                android:textColor="#515664"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2sp"
+                                android:orientation="horizontal"
+                                app:cardCornerRadius="15sp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/g_black_down"
+                                    android:backgroundTint="#ffd5e9"
+                                    android:padding="20dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_party_packages" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Party Packsges"
+                                android:textColor="#515664"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2sp"
+                                android:orientation="horizontal"
+                                app:cardCornerRadius="15sp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/g_black_down"
+                                    android:backgroundTint="#aad5f9"
+                                    android:padding="20dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_buffets" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Buffets"
+                                android:textColor="#515664"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2sp"
+                                android:orientation="horizontal"
+                                app:cardCornerRadius="15sp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/g_black_down"
+                                    android:backgroundTint="#fdddb1"
+                                    android:padding="20dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_top_rated" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Top Rated"
+                                android:textColor="#515664"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:letterSpacing=".1"
+                    android:padding="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="MUST TRY IN DELHI NCR"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_corner_5"
+                    android:elevation="2sp">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:letterSpacing=".1"
+                    android:padding="15dp"
+                    android:text="POPULAR RESTAURANTS AROUND YOU"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:padding="15dp"
+                    android:text="FEATURED"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+                <include layout="@layout/item_restaurants2" />
+
+                <include layout="@layout/item_restaurants2" />
+
+                <include layout="@layout/item_restaurants2" />
+
+                <include layout="@layout/item_restaurants2" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

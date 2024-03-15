@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/deliveryFragment">
+
+    <fragment
+        android:id="@+id/diningFragment"
+        android:name="me.vikas.myzomato.Fragment.HomeNav.DiningFragment"
+        android:label="fragment_dining"
+        tools:layout="@layout/fragment_dining" />
+    <fragment
+        android:id="@+id/deliveryFragment"
+        android:name="me.vikas.myzomato.Fragment.HomeNav.DeliveryFragment"
+        android:label="fragment_delivery"
+        tools:layout="@layout/fragment_delivery" />
+    <fragment
+        android:id="@+id/NYCFragment"
+        android:name="me.vikas.myzomato.Fragment.HomeNav.NYEFragment"
+        android:label="fragment_n_y_c"
+        tools:layout="@layout/fragment_n_y_e" />
+</navigation>

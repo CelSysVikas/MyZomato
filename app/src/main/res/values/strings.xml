@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MyZomato</string>
+    <string name="splash_moto">Carbon and Plastic Netural\nDeliveries in India</string>
+    <string name="skip">Skip</string>
+    <string name="india_1">Inda\'s #1 Food Delivery\nand Dining App</string>
+    <string name="login_signup">Log in or sign up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_phone">Enter Phone Number</string>
+    <string name="default_code">+91</string>
+    <string name="or">or</string>
+    <string name="agree_with_terms">By continuing, you agree to our\n<u>Terms of Service</u> <u>Policy Policy</u> <u>Content Policy</u></string>
+    <string name="_continue">Continue</string>
+    <string name="continue_with_email">Continue with Email</string>
+    <string name="email_or_username">Email or USername</string>
+    <string name="zomato_welcome">Welcome to Zomato</string>
+    <string name="tell_your_name">Tell us your name</string>
+    <string name="name">Name</string>
+    <string name="check_email">Check your email</string>
+    <string name="to_conform_email_address">To confirm your email address, please tap the button in the email we send to</string>
+    <string name="open_email_app">Open email app</string>
+    <string name="manually_enter_otp">Manually enter OTP</string>
+    <string name="login_with_otp">Login with OTP</string>
+    <string name="login">Login</string>
+    <string name="email_valid_for">Valid for 10 minutes</string>
+    <string name="resend_email">Resend Verification Email</string>
+    <string name="we_dont_have_location">We don\'t have your location, yet!</string>
+    <string name="set_your_location">Set your location to start exploring\nrestronts near you</string>
+    <string name="enable_device_location">Enable device location</string>
+    <string name="enter_location_manually">Enter location manually</string>
+    <string name="delivery">Delivery</string>
+    <string name="dining">Dining</string>
+    <string name="nye">NYE</string>
+    <string name="filter">Short</string>
+    <string name="resend_link">Resend link</string>
+    <string name="bulleted_text"><![CDATA[
+        • Menu Items, nutritional information and prices are set directly by the restaurant.\n\n
+        • Nutritional information values displayed are indicative, per serving and may be vary depending on the ingredients, portion  size and customisations.\n\n
+        • An average active adult requires 2,000 kcal energy per day, however, calorie needs may vary.
+        ]]></string>
+</resources>
